@@ -60,7 +60,7 @@ export default function Home() {
               <MapPin size={16} className="badge-icon" /> 
               Proudly Serving Houston, TX
             </span>
-            <h1 className="hero-title">Fueling Houston<br />One Snack at a Time</h1>
+            <h1 className="hero-title">#1 Vending Machine Company<br />in Houston TX</h1>
             <p className="hero-subtitle">Modern, reliable, and fully stocked vending machines tailored for your Houston business. Elevate your breakroom experience today.</p>
             <div className="hero-cta-group">
               <Link href="#contact" className="btn-primary btn-large">
@@ -77,26 +77,26 @@ export default function Home() {
               <h3>Get Your Free Machine</h3>
               <p>Fill out the form below and we'll be in touch within 24 hours.</p>
               
-              <form className="hero-form" onSubmit={(e) => e.preventDefault()}>
+              <form className="hero-form" action="https://formspree.io/f/xeervvgd" method="POST">
                 <div className="form-group icon-input-group">
                   <User size={18} className="input-icon" />
-                  <input type="text" id="name" placeholder="Full Name" required />
+                  <input type="text" id="name" name="name" placeholder="Full Name" required />
                 </div>
                 
                 <div className="form-group icon-input-group">
                   <Mail size={18} className="input-icon" />
-                  <input type="email" id="email" placeholder="Email Address" required />
+                  <input type="email" id="email" name="email" placeholder="Email Address" required />
                 </div>
                 
                 <div className="form-group icon-input-group">
                   <Building2 size={18} className="input-icon" />
-                  <input type="text" id="businessName" placeholder="Business Name" required />
+                  <input type="text" id="businessName" name="businessName" placeholder="Business Name" required />
                 </div>
                 
                 <div className="form-row">
                   <div className="form-group icon-input-group">
                     <Users size={18} className="input-icon" />
-                    <select id="employeeCount" required defaultValue="">
+                    <select id="employeeCount" name="employeeCount" required defaultValue="">
                       <option value="" disabled>Employees</option>
                       <option value="1-50">1-50</option>
                       <option value="51-200">51-200</option>
@@ -107,7 +107,7 @@ export default function Home() {
                   
                   <div className="form-group icon-input-group">
                     <Coffee size={18} className="input-icon" />
-                    <select id="vendingType" required defaultValue="">
+                    <select id="vendingType" name="vendingType" required defaultValue="">
                       <option value="" disabled>Machine Type</option>
                       <option value="snacks_only">Snacks Only</option>
                       <option value="drinks_only">Drinks Only</option>
