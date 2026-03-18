@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <main>
       <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-        <div className="logo">HouVending</div>
+        <div className="logo">Houston Vending</div>
         <nav>
           <ul className="nav-links">
             <li><Link href="#services">Services</Link></li>
@@ -128,7 +128,7 @@ export default function Home() {
       <section id="features" className="features-section">
         <div className="section-container">
           <div className="section-header">
-            <h2>Why Choose <span className="text-highlight">HouVending?</span></h2>
+            <h2>Why Choose <span className="text-highlight">Houston Vending?</span></h2>
             <p>We provide a hassle-free, fully managed vending experience that your employees and customers will actually love.</p>
           </div>
           
@@ -286,7 +286,7 @@ export default function Home() {
             <div className="about-content">
               <h2>Deep Roots In <br /><span className="text-highlight">Houston</span></h2>
               <p className="about-lead">We aren't a faceless national corporation. We are a locally owned and operated Houston business dedicated to elevating the breakrooms of our community.</p>
-              <p>For over a decade, HouVending has provided reliable, rapid, and fully customized refreshment services to businesses across the metro area. From the Energy Corridor to Downtown, our technicians are always just around the corner, ensuring your team stays fueled, focused, and happy.</p>
+              <p>For over a decade, Houston Vending has provided reliable, rapid, and fully customized refreshment services to businesses across the metro area. From the Energy Corridor to Downtown, our technicians are always just around the corner, ensuring your team stays fueled, focused, and happy.</p>
               
               <ul className="about-list">
                 <li><MapPin size={20} className="list-icon" /> Guaranteed fast, local response times.</li>
@@ -297,6 +297,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-logo">Houston Vending</div>
+          <p className="footer-description">Premium vending machine services for the Houston metro area. Modern, reliable, and fully stocked for your business.</p>
+          <div className="footer-links">
+            <Link href="#services">Services</Link>
+            <Link href="#machines">Machines</Link>
+            <Link href="#about">About</Link>
+            <Link href="#contact">Contact</Link>
+          </div>
+          <p className="footer-copyright">&copy; {new Date().getFullYear()} Houston Vending. All rights reserved.</p>
+        </div>
+      </footer>
     </main>
   );
 }
